@@ -6,7 +6,7 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const sass = require('node-sass-middleware');
+// const sass = require('node-sass-middleware');
 
 const app = express();
 
@@ -20,16 +20,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-
-const sass_options = {
-    src: path.join(__dirname, 'sass'),
-    dest: path.join(__dirname, 'public/stylesheets'),
-    debug: true,
-    outputStyle: 'compressed',
-    prefix: 'stylesheets/'
-};
-
-app.use(sass(sass_options));
+// app.use(sass({
+//     src: __dirname + '/sass',
+//     dest: path.join(__dirname, 'public/'),
+//     debug: true,
+//     outputStyle: 'compressed',
+//     prefix: 'stylesheets/'
+// }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // setup the routes
