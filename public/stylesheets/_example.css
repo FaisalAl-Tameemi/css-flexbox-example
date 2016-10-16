@@ -1,0 +1,39 @@
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  /* cross browser flex display */
+  /*
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  */
+  display: flex;
+
+  flex-flow: row wrap;
+  /*-webkit-flex-flow: row wrap;*/
+  /*justify-content: space-around;*/
+}
+
+.flex-item {
+  /* color and size */
+  background: rgba(41, 128, 185, 1.0);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 10px 5px;
+  width: calc(25% - 10px);
+  height: 150px;
+  /* text styles */
+  line-height: 150px;
+  color: white;
+  font-weight: lighter;
+  font-size: 3em;
+  text-align: center;
+}
+
+.flex-item:hover {
+  background: rgba(243, 156, 18,1.0);
+}
