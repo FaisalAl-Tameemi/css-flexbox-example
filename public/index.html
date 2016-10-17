@@ -4,11 +4,43 @@
     <title>
       CSS Box Model
     </title>
+		<!-- Include Roboto Font -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<!-- Include Page Stylesheets (aka css files) -->
     <link href="/stylesheets/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>CSS Box Model</h1>
+    <h1 class="main-title">CSS Box Model</h1>
+
+		<main class="flex columns">
+			<section class="flex rows">
+				<article style="order: 2;">
+					article 1
+				</article>
+				<article style="order: 1;">
+					article 2
+				</article>
+			</section>
+			<section class="flex columns">
+				<article>
+					article 3
+				</article>
+				<article>
+					article 4
+				</article>
+			</section>
+		</main>
+
+		<!-- <section class="section highlight-article">
+			<div class="highlight-left">
+				<img src="https://tctechcrunch2011.files.wordpress.com/2015/08/tesla_model_s.jpg?w=738" />
+			</div>
+			<div class="highlight-right">
+				test123
+			</div>
+		</section>
+		<section class="section latest-posts">
+		</section> -->
 
 		<!-- CSS Syntax and box-sizing -->
 		<!-- <div class="sides">
@@ -30,9 +62,11 @@
       <li class="flex-item">6</li>
     </ul> -->
   </body>
+	<!-- Include Dependencies (ex: jQuery) -->
   <script
     src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
     integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
     crossorigin="anonymous"></script>
+	<!-- Include page scripts -->
   <script src="/javascripts/script.js" charset="utf-8"></script>
 </html>
